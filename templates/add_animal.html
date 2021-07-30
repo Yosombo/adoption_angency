@@ -1,0 +1,11 @@
+{%extends 'base.html'%} {%block title%}Adoption | Add{%endblock%} {%block
+content%}
+<h1>Add New Animal</h1>
+<form action="/add" method="POST">
+  {{form.hidden_tag()}} {%for field in form if field.widget.input_type
+  !='hidden'%}
+  <div class="label_input">{{field.label}} {{field}}</div>
+  {%endfor%}
+  <button class="btn btn-success">Submit</button>
+</form>
+{%endblock%}

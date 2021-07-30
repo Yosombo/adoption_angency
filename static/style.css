@@ -1,0 +1,31 @@
+.home_container {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 900px;
+}
+h1 {
+  color: green;
+}
+.animal_card {
+  width: 280px;
+}
+.animal_card img {
+  width: 250px;
+  height: 250px;
+  border-radius: 5px;
+  border: 1px solid wheat;
+}
+.animal_name {
+  color: rgb(61, 131, 131);
+}
+.animal_available {
+  font-weight: bold;
+  color: rgb(68, 68, 68);
+}
+.label_input {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  width: 360px;
+  margin-bottom: 8px;
+}

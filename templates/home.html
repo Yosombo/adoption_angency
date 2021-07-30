@@ -1,0 +1,19 @@
+{%extends 'base.html'%} {%block title%}Adoption | Home{%endblock%} {%block
+content%}
+<h1>Welcome to our adoption center</h1>
+<div class="home_container">
+  {%for ani in animals%}
+  <div class="animal_card">
+    <img src="{{ani.photo_url}}" alt="" /><br />
+    <a href="/{{ani.id}}"><span class="animal_name">{{ani.name}}</span></a>
+    {%if ani.available%}
+    <span class="animal_available"> is availble</span>
+    {%else%}
+    <span>adopted</span>
+    {%endif%}
+  </div>
+
+  {%endfor%}
+</div>
+<a class="btn btn-success" href="/add">Add a Pet</a>
+{%endblock%}
